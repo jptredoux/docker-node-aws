@@ -1,11 +1,11 @@
-FROM node:latest
+FROM node:10
 
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    curl \
-    zip unzip \
-    python-dev \
-    && rm -rf /var/lib/apt/lists/*
+  curl \
+  zip unzip \
+  python-dev \
+  && rm -rf /var/lib/apt/lists/*
 
 
 WORKDIR /tmp
